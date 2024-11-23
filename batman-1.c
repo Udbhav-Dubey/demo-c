@@ -19,7 +19,7 @@
                         printf("batman is fucking awesome \n");
                            scanf("%d",&y);
                         if (y==0){
-                              printf("fuck off mate ");}
+                              printf("fuck off mate\n");}
                          else {
                               printf("you are a homie\n");}
 
@@ -35,7 +35,7 @@ else {printf("you failed 1/3 \n");}
             else {printf("you failed 0/3 \n");}
 
 }
-if // (y>1){printf ("chutiye jitna bola hai utna kar\n");}
+if  (y>1){printf ("chutiye jitna bola hai utna kar\n");}
 
 
 

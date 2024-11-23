@@ -3,7 +3,14 @@
       int x,y;
       printf("lets play, please answer in 1,0\v to start press 1\n");
       scanf("%d",&y);
-      if (y==1){
+
+
+return 0;
+}
+
+
+
+/* if (y==1){
                   printf ("true or false game\n ");
                   printf ("bob kane is the creator of batman\n");
                   scanf("%d",&y);
@@ -23,7 +30,4 @@ else {printf ("ke karraha hai bhai");}}
 
 
 } else if (x==0){ printf("you scored 0/3");}
-  else {printf("ke karraha hai bhai"); }
-
-return 0;
-}
+  else {printf("ke karraha hai bhai"); } */
