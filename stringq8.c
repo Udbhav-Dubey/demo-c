@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main (){
     int dig,sp,al;
-	printf("C program to find total number of alphabets, digits or special characters in a string");
+	printf("C program to find total number of alphabets, digits or special characters in a string\n");
 	char str[256];
 	fgets(str,256,stdin);
 	for (int i=0;str[i]!='\0';i++){
@@ -11,16 +11,19 @@ int main (){
 		}
 	}
 	for (int i=0;str[i]!='\0';i++){
-        if (33<=str[i]&&str[i]>=64){
+        if (33<=str[i]&&str[i]<=47){
             sp++;
         }
-        if ('a'<=str[i]&&str[i]<='z'){
+	if (60<=str[i]&&str[i]<=64){
+	    sp++;	
+	}
+        else if ('a'<=str[i]&&str[i]<='z'){
             al++;
         }
-        if ('A'<=str[i]&&str[i]<='Z'){
+        else if ('A'<=str[i]&&str[i]<='Z'){
             al++;
             }
-        if ('0'<=str[i]&&str[i]>='9'){
+        else if (48<=str[i]&&str[i]<=57){
             dig++;
         }
 	}
