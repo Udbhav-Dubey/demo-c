@@ -1,13 +1,10 @@
 #include <stdio.h>
-struct id {
-    char name[10];
-    int age;
+struct A {
+    int x;
 };
 int main(){
-    printf("structurs\n");
-    struct id i1,i2;
-    i1.name[10] = "rajat";
-    i1.age=19;
-
+    struct A a;
+    a.x=10;
+    printf("%d\n",a.x);
     return 0;
 }
