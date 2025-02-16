@@ -14,13 +14,13 @@ int main(){
     }
     printf("\ninput number of times to rotate right \n");
     scanf("%d",&r);
-    // for (int j=0;j<r;j++){
-    //         temp = arr [n-1];
-    //     for (int i=n-1;i==0;i--){
-    //         arr[i+1]=arr[0];
-    //     }
-    //     arr[0]=temp;
-    // }
+   	for (int i=0;i<r;i++){
+		temp = arr[n-1];
+		for (int j=n-1;j>0;j--){
+			arr[j]=arr[j-1];
+		}
+		arr[0]=temp;
+	}
     printf("after rotation \n");
     for (int i=0;i<n;i++){
         printf("%d  ",arr[i]);
