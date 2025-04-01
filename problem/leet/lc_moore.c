@@ -1,14 +1,21 @@
 #include <stdio.h>
 #include <limits.h>
 int majorityElement(int* nums,int numsSize){
-    int freq[INT_MAX]={0};    
-    for (int i=0;i<numsSize;i++){
-            freq[nums[i]]++
-            if (freq[nums[i]]>numsSize/2){
-                return nums[i];
+        int count =0;
+        int candidate=0;
+        for (int i=0;i<numsSize;i++){
+            if (count ==0){
+                candidate=nums[i];
+            }
+            count += (nums[i] == candidate)? 1:-1; 
+        }
+        int freq=0;
+        for (int i=0;i<numsSize;i++){
+            if (nums[i]==candidate){
+                freq++;
             }
         }
-        return -1;
+        return (freq>numsSize/2)? candidate : -1;
 }
     int main (){
         printf("please enter the size of array : ");
